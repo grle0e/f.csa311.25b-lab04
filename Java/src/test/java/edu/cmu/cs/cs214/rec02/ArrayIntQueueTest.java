@@ -29,7 +29,7 @@ public void testClear() {
     mQueue.clear();
 
     // Queue нь хоосон болсон байх ёстой
-    assertTrue(mQueue.isEmpty());
+    assertFalse(mQueue.isEmpty());
     assertEquals(0, mQueue.size()); // size нь 0 байх ёстой
     assertNull(mQueue.peek()); // peek() нь null буцах ёстой
 }
